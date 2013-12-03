@@ -5,6 +5,8 @@
             <!-- the plugin name [A-Za-z_] -->
             <pluginName>GroupDocsViewerJava</pluginName>
 
+            <pluginNiceName>GroupDocs Viewer for Java</pluginNiceName>
+
             <!-- a short description -->
 			<pluginDescription>GroupDocs Viewer for Java plugin for PimCore CMS</pluginDescription>
 
