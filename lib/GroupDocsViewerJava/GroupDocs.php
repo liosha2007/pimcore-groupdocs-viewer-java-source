@@ -89,56 +89,55 @@ class GroupDocsViewerJava_GroupDocs {
             </script>
             <script type="text/javascript" src="{url}/assets/js/GroupdocsViewer.all.min.js"></script>
 
-            <link rel="stylesheet" type="text/css" href="{url}/assets/css/bootstrap.css">
-            <link rel="stylesheet" type="text/css" href="{url}/assets/css/GroupdocsViewer.all.min.css">
-            <link rel="stylesheet" type="text/css" href="{url}/assets/css/jquery-ui-1.10.3.dialog.min.css">
-            <style type="text/css">
-                #java_groupdocs_viewer p
-                {
-                    color: #737373;
-                }
-            </style>
-            <div id="java_groupdocs_viewer" style="width: {width}; height: {height}; overflow: hidden; position: relative;
-                margin-bottom: 20px; background-color: gray; border: 1px solid #ccc;">
-                    </div>
-            <script>
-                    $(function () {
-                        var localizedStrings = null;
-                        var thumbsImageBase64Encoded = null;
-                        $("#java_groupdocs_viewer").groupdocsViewer({
-                        filePath: "{defaultFileName}",
-                        docViewerId: "doc_viewer1",
-                        quality: 100,
-                        showHeader: true,
-                        showThumbnails: true,
-                        openThumbnails: true,
-                        initialZoom: 100,
-                        zoomToFitWidth: true,
-                        zoomToFitHeight: false,
-                        backgroundColor: "",
-                        showFolderBrowser: true,
-                        showPrint: true,
-                        showDownload: true,
-                        showZoom: true,
-                        showPaging: true,
-                        showViewerStyleControl: true,
-                        showSearch: true,
-                        preloadPagesCount: 0,
-                        viewerStyle: 1,
-                        supportTextSelection: true,
-                        localizedStrings: localizedStrings,
-                        thumbsImageBase64Encoded: thumbsImageBase64Encoded,
-                        showDownloadErrorsInPopup: true
-                    });
-                });
-            </script>
+                <link rel="stylesheet" type="text/css" href="{url}/assets/css/bootstrap.css">
+                <link rel="stylesheet" type="text/css" href="{url}/assets/css/GroupdocsViewer.all.min.css">
+                <link rel="stylesheet" type="text/css" href="{url}/assets/css/jquery-ui-1.10.3.dialog.min.css">
+                <style type="text/css">
+                    #java_groupdocs_viewer p
+                    {
+                        color: #737373;
+                    }
+                </style>
+                <div id="java_groupdocs_viewer" style="width: {width}; height: {height}; overflow: hidden; position: relative;
+                    margin-bottom: 20px; background-color: gray; border: 1px solid #ccc;">
+                        </div>
+                <script>
+                            $(function () {
+                                var localizedStrings = null;
+                                var thumbsImageBase64Encoded = null;
+                                $("#java_groupdocs_viewer").groupdocsViewer({
+                                    filePath: "{defaultFileName}",
+                                    docViewerId: "doc_viewer1",
+                                    quality: 100,
+                                    showHeader: true,
+                                    showThumbnails: true,
+                                    openThumbnails: true,
+                                    initialZoom: 100,
+                                    zoomToFitWidth: true,
+                                    zoomToFitHeight: false,
+                                    backgroundColor: "",
+                                    showFolderBrowser: true,
+                                    showPrint: true,
+                                    showDownload: true,
+                                    showZoom: true,
+                                    showPaging: true,
+                                    showViewerStyleControl: true,
+                                    showSearch: true,
+                                    preloadPagesCount: 0,
+                                    viewerStyle: 1,
+                                    supportTextSelection: true,
+                                    localizedStrings: localizedStrings,
+                                    thumbsImageBase64Encoded: thumbsImageBase64Encoded,
+                                    showDownloadErrorsInPopup: true
+                                });
+                            });
+                </script>
 		';
         $template = str_replace('{url}', $this->_url, $template);
         $template = str_replace('{width}', $this->_width, $template);
         $template = str_replace('{height}', $this->_height, $template);
         $template = str_replace('{defaultFileName}', $this->_defaultFileName, $template);
         $template = str_replace('{useHttpHandlers}', $this->_useHttpHandlers ? 'true' : 'false', $template);
-        var_dump($this->_useHttpHandlers);
 
         return $template;
 	}
