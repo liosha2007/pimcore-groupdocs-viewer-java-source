@@ -82,10 +82,10 @@ class GroupDocsViewerJava_GroupDocs {
             </script>
             <script type="text/javascript" src="{url}/assets/js/installableViewer.min.js"></script>
             <script type="text/javascript">
-                $.fn.groupdocsViewer.prototype.applicationPath = "{url}/";
+                $.ui.groupdocsViewer.prototype.applicationPath = "{url}/";
             </script>
             <script type="text/javascript">
-                $.fn.groupdocsViewer.prototype.useHttpHandlers = {useHttpHandlers};
+                $.ui.groupdocsViewer.prototype.useHttpHandlers = {useHttpHandlers};
             </script>
             <script type="text/javascript" src="{url}/assets/js/GroupdocsViewer.all.min.js"></script>
 
